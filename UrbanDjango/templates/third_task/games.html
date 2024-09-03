@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>games</title>
+</head>
+<body>
+    <h1>Игры</h1>
+    <ul>
+        {% for item, description in items.items %}
+            <li>{{ item }}: {{ description }}
+                <button>Купить</button>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Назад на главную</a>
+</body>
+</html>
