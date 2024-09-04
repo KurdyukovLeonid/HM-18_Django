@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import platform, games, cart
+from task4.views import platform, games, cart
 
 urlpatterns = [
-    path('', platform, name='platform'),
+    path('platform/', platform, name='platform'),
     path('games/', games, name='games'),
     path('cart/', cart, name='cart'),
 ]
